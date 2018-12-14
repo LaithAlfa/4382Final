@@ -12,6 +12,7 @@ class Product(models.Model):
 class Buyer(models.Model):
     fName = models.TextField()
     lName = models.TextField()
+    uName = models.TextField()
     email = models.TextField()
     address = models.TextField()
     address2 = models.TextField()
