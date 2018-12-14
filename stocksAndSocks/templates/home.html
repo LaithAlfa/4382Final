@@ -1,359 +1,169 @@
 <!-- HOME.HTML -->
-{% load static %}
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<title>Socks N' Stocks</title>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% extends 'base.html' %}
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Rokkitt:100,300,400,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
-	<!-- Ion Icon Fonts-->
-	<link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
-
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
-
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
-	<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
-	
-	<!-- Date Picker -->
-	<link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
-	<!-- Flaticons  -->
-	<link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
-
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="{% static 'css/style.css' %}">
-
-	</head>
-	<body>
-		
-        <div class="colorlib-loader"></div>
-    
-        <div id="page">
-            <nav class="colorlib-nav" role="navigation">
-                <div class="top-menu">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-7 col-md-9">
-                                <div id="colorlib-logo"><a href="home.html">Socks N' Stocks</a></div>
-                            </div>
-                            <div class="col-sm-5 col-md-3">
-                            <form action="#" class="search-wrap">
-                               <div class="form-group">
-                                  <input type="search" class="form-control search" placeholder="Search">
-                                  <button class="btn btn-primary submit-search text-center" type="submit"><i class="icon-search"></i></button>
-                               </div>
-                            </form>
-                         </div>
-                     </div>
-                        <div class="row">
-                            <div class="col-sm-12 text-left menu-1">
-                                <ul>
-                                    <li class="active"><a href="home.html">Home</a></li>
-                                    <li>
-                                        <a href="socks.html">Socks</a>
-                                    </li>
-                                    <li><a href="stocks.html">Stockings</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li class="cart"><a href="cart.html"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sale">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-8 offset-sm-2 text-center">
-                                <div class="row">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <aside id="colorlib-hero">
-                <div class="flexslider">
-                    <ul class="slides">
-                       <li style="background-image: url('https://i.imgur.com/LfGbUL6.jpg');">
-                           <div class="overlay"></div>
-                           <div class="container-fluid">
-                               <div class="row">
-                                   <div class="col-sm-6 offset-sm-3 text-center slider-text">
-                                       <div class="slider-text-inner">
-                                           <div class="desc">
-                                               <h1 class="head-1">Warm</h1>
-                                               <h2 class="head-2">socks</h2>
-                                               <h2 class="head-3">Collection</h2>
-                                               <p class="category"><span>New trending wool socks</span></p>
-                                               <p><a href="socks.html" class="btn btn-primary">Shop Collection</a></p>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                       </li>
-                       <li style="background-image: url(https://i.imgur.com/kfLPlux.jpg);">
-                           <div class="overlay"></div>
-                           <div class="container-fluid">
-                               <div class="row">
-                                   <div class="col-sm-6 offset-sm-3 text-center slider-text">
-                                       <div class="slider-text-inner">
-                                           <div class="desc">
-                                               <h1 class="head-1">Huge</h1>
-                                               <h2 class="head-2">Sale</h2>
-                                               <h2 class="head-3"><strong class="font-weight-bold">50%</strong> Off</h2>
-                                               <p class="category"><span>Colorful Dress Socks</span></p>
-                                               <p><a href="socks.html" class="btn btn-primary">Shop Collection</a></p>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                       </li>
-                      </ul>
-                  </div>
-            </aside>
-            <div class="colorlib-intro">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 text-center">
-                            <h2 class="intro">It's dangerous to go alone! Take this!</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="colorlib-product">
+{% block content %}
+<aside id="colorlib-hero">
+    <div class="flexslider">
+        <ul class="slides">
+            <li style="background-image: url('https://i.imgur.com/LfGbUL6.jpg');">
+                <div class="overlay"></div>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-4">
-                            <p> </p>
-                        </div>
-                        <div class="col-sm-4 text-center">
-                            <div class="featured">
-                                <a href="#" class="featured-img" style="background-image: url(https://i.imgur.com/GIaPc3o.jpg);"></a>
+                        <div class="col-sm-6 offset-sm-3 text-center slider-text">
+                            <div class="slider-text-inner">
                                 <div class="desc">
-                                    <h2><a href="socks.html">Our Products</a></h2>
+                                    <h1 class="head-1">Warm</h1>
+                                    <h2 class="head-2">socks</h2>
+                                    <h2 class="head-3">Collection</h2>
+                                    <p class="category"><span>New trending wool socks</span></p>
+                                    <p><a href="socks.html" class="btn btn-primary">Shop Collection</a></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <p> </p>
-                        </div>
                     </div>
                 </div>
-            </div>
-    
-            <div class="colorlib-product">
-                <div class="container">
+            </li>
+            <li style="background-image: url(https://i.imgur.com/kfLPlux.jpg);">
+                <div class="overlay"></div>
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-8 offset-sm-2 text-center colorlib-heading">
-                            <h2>Pride and Joy</h2>
-                        </div>
-                    </div>
-                    <div class="row row-pb-md">
-                        <div class="col-lg-3 mb-4 text-center">
-                            <div class="product-entry border">
-                                <a href="#" class="prod-img">
-                                    <img src="https://i.imgur.com/UtpDeQM.png" class="img-fluid" alt="Free html5 bootstrap 4 template">
-                                </a>
+                        <div class="col-sm-6 offset-sm-3 text-center slider-text">
+                            <div class="slider-text-inner">
                                 <div class="desc">
-                                    <h2><a href="#">Alien Socks</a></h2>
-                                    <p>These socks come straight from outer space! Actually, they come from a farm manned by multiple generations of cotton farmers.</p>
-                                    <span class="price">$19.99</span>
+                                    <h1 class="head-1">Huge</h1>
+                                    <h2 class="head-2">Sale</h2>
+                                    <h2 class="head-3"><strong class="font-weight-bold">50%</strong> Off</h2>
+                                    <p class="category"><span>Colorful Dress Socks</span></p>
+                                    <p><a href="socks.html" class="btn btn-primary">Shop Collection</a></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-4 text-center">
-                            <div class="product-entry border">
-                                <a href="#" class="prod-img">
-                                    <img src="https://i.imgur.com/OlhqhAK.png" class="img-fluid" alt="Free html5 bootstrap 4 template">
-                                </a>
-                                <div class="desc">
-                                    <h2><a href="#">Gothic Butterfly Socks</a></h2>
-                                    <p>When you're trying to be hardcore, but Hot Topic is too intense for your semi-gothic wardrobe.</p>
-                                    <span class="price">$19.99</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 mb-4 text-center">
-                            <div class="product-entry border">
-                                <a href="#" class="prod-img">
-                                    <img src="https://i.imgur.com/Go5oLMn.png" class="img-fluid" alt="Free html5 bootstrap 4 template">
-                                </a>
-                                <div class="desc">
-                                    <h2><a href="#">Boring White Socks</a></h2>
-                                    <p>A classic look for every middle-aged dad to mow the lawn in.</p>
-                                    <span class="price">$11.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 mb-4 text-center">
-                            <div class="product-entry border">
-                                <a href="#" class="prod-img">
-                                    <img src="https://i.imgur.com/jxeYeF3.png" class="img-fluid" alt="Free html5 bootstrap 4 template">
-                                </a>
-                                <div class="desc">
-                                    <h2><a href="404.html">Mr. Smiles</a></h2>
-                                    <p>When your life is falling apart, know that the sturdy material of these socks will keep you smiling.</p>
-                                    <span class="price">$19.99</span>
-                                </div>
-                            </div>
-                        </div>
-                    
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <p><a href="#" class="btn btn-primary btn-lg">Shop All Products</a></p>
-                        </div>
                     </div>
                 </div>
-            </div>
-    
-            <div class="colorlib-partner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8 offset-sm-2 text-center colorlib-heading colorlib-heading-sm">
-                            <h2>Trusted Partners</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col partner-col text-center">
-                            <img src="https://i.imgur.com/XWL3r3K.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
-                        </div>
-                        <div class="col partner-col text-center">
-                            <img src="https://i.imgur.com/uAFOQDh.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
-                        </div>
-                        <div class="col partner-col text-center">
-                            <img src="https://i.imgur.com/DB094u9.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
-                        </div>
-                        <div class="col partner-col text-center">
-                            <img src="https://i.imgur.com/LDTr4Ql.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
-                        </div>
-                        <div class="col partner-col text-center">
-                            <img src="https://i.imgur.com/ibxmTCF.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <footer id="colorlib-footer" role="contentinfo">
-                <div class="container">
-                    <div class="row row-pb-md">
-                        <div class="col footer-col colorlib-widget">
-                            <h4>About Footwear</h4>
-                            <p>Please Don't Sue us.</p>
-                            <p>
-                                <ul class="colorlib-social-icons">
-                                    <li><a href="404.html"><i class="icon-twitter"></i></a></li>
-                                    <li><a href="404.html"><i class="icon-facebook"></i></a></li>
-                                    <li><a href="404.html"><i class="icon-linkedin"></i></a></li>
-                                    <li><a href="404.html"><i class="icon-dribbble"></i></a></li>
-                                </ul>
-                            </p>
-                        </div>
-                        <div class="col footer-col colorlib-widget">
-                            <h4>Customer Care</h4>
-                            <p>
-                                <ul class="colorlib-footer-links">
-                                    <li><a href="404.html">Contact</a></li>
-                                    <li><a href="404.html">Returns/Exchange</a></li>
-                                    <li><a href="404.html">Gift Voucher</a></li>
-                                    <li><a href="404.html">Wishlist</a></li>
-                                    <li><a href="404.html">Special</a></li>
-                                    <li><a href="404.html">Customer Services</a></li>
-                                    <li><a href="404.html">Site maps</a></li>
-                                </ul>
-                            </p>
-                        </div>
-                        <div class="col footer-col colorlib-widget">
-                            <h4>Information</h4>
-                            <p>
-                                <ul class="colorlib-footer-links">
-                                    <li><a href="404.html">About us</a></li>
-                                    <li><a href="404.html">Delivery Information</a></li>
-                                    <li><a href="404.html">Privacy Policy</a></li>
-                                    <li><a href="404.html">Support</a></li>
-                                    <li><a href="404.html">Order Tracking</a></li>
-                                </ul>
-                            </p>
-                        </div>
-    
-                        <div class="col footer-col">
-                            <h4>News</h4>
-                            <ul class="colorlib-footer-links">
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="404.html">Press</a></li>
-                                <li><a href="404.html">Exhibitions</a></li>
-                            </ul>
-                        </div>
-    
-                        <div class="col footer-col">
-                            <h4>Contact Information</h4>
-                            <ul class="colorlib-footer-links">
-                                <li>2501 4th Ave<br> Canyon, TX 79016 </li>
-                                <li><a href="tel://1234567920">806 651 7916</a></li>
-                                <li><a href="mailto:lalfaloujeh@wtamu.edu">lalfaloujeh@wtamu.edu</a></li>
-                                <li><a href="#"laith.com</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="copy">
-                    <div class="row">
-                        <div class="col-sm-12 text-center">
-                            <p>
-                            
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            </li>
+            </ul>
         </div>
-    
-        <div class="gototop js-top">
-            <a href="#" class="js-gotop"><i class="ion-ios-arrow-up"></i></a>
+</aside>
+<div class="colorlib-intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2 class="intro">It's dangerous to go alone! Take this!</h2>
+            </div>
+        </div>
     </div>
-	
-	<!-- jQuery -->
-	<script src="{% static 'js/jquery.min.js' %}"></script>
-   <!-- popper -->
-   <script src="{% static 'js/popper.min.js' %}"></script>
-   <!-- bootstrap 4.1 -->
-   <script src="{% static 'js/bootstrap.min.js' %}"></script>
-   <!-- jQuery easing -->
-   <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
-	<!-- Waypoints -->
-	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
-	<!-- Flexslider -->
-	<script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
-	<!-- Owl carousel -->
-	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
-	<!-- Magnific Popup -->
-	<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
-	<script src="{% static 'js/magnific-popup-options.js' %}"></script>
-	<!-- Date Picker -->
-	<script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
-	<!-- Stellar Parallax -->
-	<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
-	<!-- Main -->
-	<script src="{% static 'js/main.js' %}"></script>
-''
-	</body>
-</html>
+</div>
+<div class="colorlib-product">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <p> </p>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="featured">
+                    <a href="#" class="featured-img" style="background-image: url(https://i.imgur.com/GIaPc3o.jpg);"></a>
+                    <div class="desc">
+                        <h2><a href="socks.html">Our Products</a></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p> </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="colorlib-product">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2 text-center colorlib-heading">
+                <h2>Pride and Joy</h2>
+            </div>
+        </div>
+        <div class="row row-pb-md">
+            <div class="col-lg-3 mb-4 text-center">
+                <div class="product-entry border">
+                    <a href="#" class="prod-img">
+                        <img src="https://i.imgur.com/UtpDeQM.png" class="img-fluid" alt="Free html5 bootstrap 4 template">
+                    </a>
+                    <div class="desc">
+                        <h2><a href="#">Alien Socks</a></h2>
+                        <p>These socks come straight from outer space! Actually, they come from a farm manned by multiple generations of cotton farmers.</p>
+                        <span class="price">$19.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4 text-center">
+                <div class="product-entry border">
+                    <a href="#" class="prod-img">
+                        <img src="https://i.imgur.com/OlhqhAK.png" class="img-fluid" alt="Free html5 bootstrap 4 template">
+                    </a>
+                    <div class="desc">
+                        <h2><a href="#">Gothic Butterfly Socks</a></h2>
+                        <p>When you're trying to be hardcore, but Hot Topic is too intense for your semi-gothic wardrobe.</p>
+                        <span class="price">$19.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4 text-center">
+                <div class="product-entry border">
+                    <a href="#" class="prod-img">
+                        <img src="https://i.imgur.com/Go5oLMn.png" class="img-fluid" alt="Free html5 bootstrap 4 template">
+                    </a>
+                    <div class="desc">
+                        <h2><a href="#">Boring White Socks</a></h2>
+                        <p>A classic look for every middle-aged dad to mow the lawn in.</p>
+                        <span class="price">$11.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4 text-center">
+                <div class="product-entry border">
+                    <a href="#" class="prod-img">
+                        <img src="https://i.imgur.com/jxeYeF3.png" class="img-fluid" alt="Free html5 bootstrap 4 template">
+                    </a>
+                    <div class="desc">
+                        <h2><a href="404.html">Mr. Smiles</a></h2>
+                        <p>When your life is falling apart, know that the sturdy material of these socks will keep you smiling.</p>
+                        <span class="price">$19.99</span>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p><a href="#" class="btn btn-primary btn-lg">Shop All Products</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="colorlib-partner">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2 text-center colorlib-heading colorlib-heading-sm">
+                <h2>Trusted Partners</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col partner-col text-center">
+                <img src="https://i.imgur.com/XWL3r3K.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
+            </div>
+            <div class="col partner-col text-center">
+                <img src="https://i.imgur.com/uAFOQDh.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
+            </div>
+            <div class="col partner-col text-center">
+                <img src="https://i.imgur.com/DB094u9.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
+            </div>
+            <div class="col partner-col text-center">
+                <img src="https://i.imgur.com/LDTr4Ql.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
+            </div>
+            <div class="col partner-col text-center">
+                <img src="https://i.imgur.com/ibxmTCF.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
+            </div>
+        </div>
+    </div>
+    {% endblock %}
 
