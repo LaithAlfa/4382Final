@@ -1,8 +1,8 @@
-# 4382 Final Project - "Stocks and Socks"
+# 4382 Final Project - "Stocks N' Socks"
 
 ## Final Project Rubric
 
-__Upload your Final Project Report on WTClass by 11:59 PM on Monday, 12/10.  You should also submit a paper copy of your report (can be slid under my door CC 208D).__
+[X] __Upload your Final Project Report on WTClass by 11:59 PM on Monday, 12/10.  You should also submit a paper copy of your report (can be slid under my door CC 208D).__
 
 Your instructor will use this rubric to evaluate your group’s final report.  The Final Report should be 8-12 full pages of written text (and screenshots, graphs, etc.), single-spaced, size 12 Times New Roman font, with 1 inch margins.
 
@@ -12,19 +12,19 @@ __Evaluation Item__
 2. Design Motivation (15)
 3. Functionality (25)
 4. Technical Details (20)
-5. Development Process (15)
-6. Assessment & Improvements (15)
+5. Development Process (15) - Aaron Hebert
+6. Assessment & Improvements (15) - Aaron Hebert
 
 ## Final Project Presentation Rubric
 
 __You will give your project presentation during the Final Exam time on 12/14 between 10:15 AM and 12:15 PM. Your presentation should be at least 20 minutes long and each team member should have a speaking role.__
 
 __Guidelines:__
-1. Introduce your project with a general overview and the motivation for your choice of project. 
-2. Demonstrate the use of your site.
-3. Explain the inner workings of your site, with reference to the MTV and ORM.
-4. Explain the challenges of development and your team’s process.
-5. Conclude with an assessment of your project – what works well and what improvements or additions could be made?
+1. [] Introduce your project with a general overview and the motivation for your choice of project. 
+2. [] Demonstrate the use of your site.
+3. [] Explain the inner workings of your site, with reference to the MTV and ORM.
+4. [] Explain the challenges of development and your team’s process.
+5. [] Conclude with an assessment of your project – what works well and what improvements or additions could be made?
 
 ## Project Notes
 
@@ -34,7 +34,7 @@ When searching for “socks” in Google, the first link that isn’t an ad is f
 
 Ideally, we would have a place to purchase socks that are unique to our store. With an engaging front-end design, we can have the visitors to our website become sold on the idea of purchasing new and fun socks and stockings from us and solely us.
 
-## Code References
+## Code Inspirations
 
 Footwear Bootstrap Example - https://colorlib.com/preview/theme/footwear/
 
